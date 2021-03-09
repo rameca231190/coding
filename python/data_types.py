@@ -28,3 +28,35 @@ print(phrase.index('a'))
 
 
 # numbers (when storing numbers you don't need quotation marks)
+print(2.093)
+print(-2.093)
+print(3 * 4 + 5)
+# Change the order
+print(3 * (4 + 5))
+
+# abs print negative variable it will scip negative
+
+my_num = -5
+print(abs(my_num))
+
+print(pow(3, 2))
+#max function will return the bigger number
+print(max(3, 2))
+
+#min function will return the smalest number
+print(min(3, 2))
+
+# round number is stands for okruglit :)
+print(round(3.7))
+
+
+# import math function
+
+from math import *
+num = 5
+
+#floor function will grep the smalest number
+print(floor(3.7))
+
+# it will return squer root of the number
+print(sqrt(36))
