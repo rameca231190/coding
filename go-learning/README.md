@@ -42,7 +42,7 @@ func main() {
 
 ```
 
-# For statement
+# For lopp statement
 
 
 ```
