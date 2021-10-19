@@ -41,3 +41,29 @@ func main() {
 }
 
 ```
+
+# For statement
+
+
+```
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := 1
+	for x < 10 {
+		//break loop based on condition
+		if x > 8 {
+			break
+		}
+		fmt.Println(x)
+		// x++ means add 1 eachtiime
+		x++
+	}
+	fmt.Println("done")
+}
+
+```
