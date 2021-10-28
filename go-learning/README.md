@@ -42,7 +42,7 @@ func main() {
 
 ```
 
-# For lopp statement
+# For loop statement
 
 
 ```
@@ -63,6 +63,33 @@ func main() {
 		// x++ means add 1 eachtiime
 		x++
 	}
+	fmt.Println("done")
+}
+
+```
+
+# Loop with multiple if's statement break and continue 
+
+
+```
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := 0
+	if x > 100 {
+		break
+	}
+	if x%2 != 0 {
+		continue
+	}
+
+	fmt.Println(x)
+	// x++ means add 1 eachtiime
+	x++
 	fmt.Println("done")
 }
 
