@@ -94,3 +94,45 @@ func main() {
 }
 
 ```
+
+
+
+
+# Linux commands in go and error handling
+
+```
+package main
+
+import (
+	"fmt"
+	"os"
+	"os/exec"
+)
+
+func execute() {
+
+	// here we perform the pwd command.
+	// we can store the output of this in our out variable
+	// and catch any errors in err
+	out, err := exec.Command("lsdvsdvs").Output()
+
+	// if there is an error with our execution
+	// handle it here
+	if err != nil {
+		fmt.Printf("%s", err)
+		fmt.Println(" Error happened")
+		os.Exit(1)
+	}
+	// as the out variable defined above is of type []byte we need to convert
+	// this to a string or else we will see garbage printed out in our console
+	// this is how we convert it to a string
+	fmt.Println("Command Successfully Executed")
+	output := string(out[:])
+	fmt.Println(output)
+}
+
+// This is how you call function on go
+func main() {
+	execute()
+}
+```
